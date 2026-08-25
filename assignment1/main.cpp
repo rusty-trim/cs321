@@ -59,7 +59,7 @@ int main(int argc, char **argv)
     }
 
     // Create the renderer that acts sort of like our brush.
-    renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_SOFTWARE);
+    renderer = SDL_CreateRenderer(window, -1, 0);
 
     // If the renderer is not created, then an error will be printed and SDL will cleanup the window and the renderer.
     if (renderer == NULL)
